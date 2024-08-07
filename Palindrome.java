@@ -7,7 +7,7 @@ class Palindrome1 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of a");
         a = sc.nextInt();
-        t = a; // Initialize t with the original value of a
+        t = a;  
         
         while (a > 0) {
             rem = a % 10;
@@ -21,6 +21,6 @@ class Palindrome1 {
             System.out.println("The given number is a palindrome");
         }
         
-        sc.close(); // Close the scanner
+       
     }
 }
