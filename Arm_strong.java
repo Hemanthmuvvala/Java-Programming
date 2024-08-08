@@ -10,7 +10,7 @@ class Arm_strong {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of a:");
         a = sc.nextInt();
-        t = a; // Initialize t with the original value of a
+        t = a; 
         
         while (a > 0) {
             rem = a % 10;
@@ -24,7 +24,7 @@ class Arm_strong {
             System.out.println("The given number is not an armstrong number");
         }
         
-       // sc.close(); // Close the scanner
+       
     }
 }
 
