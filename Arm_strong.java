@@ -1,5 +1,5 @@
 
-import java.util.Scanner;
+import java.util.*;
 
 class Arm_strong {
     @SuppressWarnings("resource")
@@ -14,11 +14,11 @@ class Arm_strong {
         
         while (a > 0) {
             rem = a % 10;
-            sum = sum * 10 + (int)Math.pow(rem,3);
+            sum = sum + (int)Math.pow(rem,3);
             a = a / 10;
         }
         
-        if (sum==t) {
+        if (t==sum) {
             System.out.println("The given number is an armstrong number");
         } else {
             System.out.println("The given number is not an armstrong number");
@@ -27,4 +27,3 @@ class Arm_strong {
        
     }
 }
-
