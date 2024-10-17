@@ -9,7 +9,7 @@ class Exception {
                 total = j / i;
                 System.out.println(total);
             } catch (ArithmeticException e) {
-                System.out.println("Error: Division by zero encountered when i = " + i);
+                System.out.println(e);
             }
         }
     }
@@ -25,4 +25,4 @@ class Exception {
 3
 5
 10
-Error: Division by zero encountered when i = 0
+java.lang.ArithmeticException: / by zero
