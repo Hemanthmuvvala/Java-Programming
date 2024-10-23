@@ -1,42 +1,56 @@
-class First extends Thread {
+class a extends Thread {
+    @Override
     public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("hi");
+        while (true) {
+            System.out.println("Good morning");
             try {
-                Thread.sleep(1000); // Pauses for 1 second
-            } catch (Exception e) {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
                 System.out.println(e);
             }
         }
     }
 }
 
-class Second extends Thread {
+class b extends Thread {
+    @Override
     public void run() {
-        for (int j = 0; j < 5; j++) {
-            System.out.println("hello");
+        while (true) {
+            System.out.println("Hello");
             try {
-                Thread.sleep(1000); // Pauses for 1 second
-            } catch (Exception e) {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
                 System.out.println(e);
             }
         }
     }
 }
 
-public class Alive  {
+class c extends Thread {
+    @Override
+    public void run() {
+        while (true) {
+            System.out.println("Welcome");
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
 
-    public static void main(String[] args) throws  Exception {
-        First f = new First();
-        Second s = new Second();
-        f.start(); // Start First thread
-        s.start();
-        System.out.println(f.isAlive()); // Start Second thread
-        f.join();
-        s.join();
-        System.out.println("bye");
-        System.out.println(s.isAlive());
-        
-
+public class Threadcla {
+    public static void main(String[] args) throws Exception {
+        a t1 = new a();
+        b t2 = new b();
+        c t3 = new c();
+       
+        t1.start();
+        t2.start();
+        t3.start();
+        t1.join();
+        t2.join();
+        t3.join();
     }
 }
