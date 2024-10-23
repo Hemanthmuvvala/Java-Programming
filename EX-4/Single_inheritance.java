@@ -14,7 +14,7 @@ public class Inherit {
     }
 
     public static class Child extends Inherit {
-        void display() {
+        void d() {
             System.out.println("World");
         }
     }
