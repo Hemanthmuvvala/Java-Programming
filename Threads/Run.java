@@ -1,8 +1,9 @@
 class A implements Runnable{
     public void run() {
-        System.out.println("Good morning");
+       
         while (true) {
             try {
+                System.out.println("Good morning");
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 System.out.println(e);
@@ -12,9 +13,10 @@ class A implements Runnable{
 }
 class B implements Runnable{
     public void run() {
-        System.out.println("Hello");
+       
         while(true){
         try {
+            System.out.println("Hello");
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             System.out.println(e);
@@ -24,9 +26,10 @@ class B implements Runnable{
 }
 class C implements Runnable{
     public void run() {
-        System.out.println("Welcome");
+      
         while(true){
         try {
+            System.out.println("Welcome");
             Thread.sleep(3000);
         } catch (InterruptedException e) {
             System.out.println(e);
